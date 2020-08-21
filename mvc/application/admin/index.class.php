@@ -1,11 +1,13 @@
 <?php
-use lib\db;
-use lib\Smarty;
+//use \libs\db;
+//use \libs\smarty;
 //class index{
 //    function int(){
-//        $db=new \db();
-//        $smarty=new \Smarty();
-//        var_dump($smarty);
+//
+//        new db();
+//
+//      $smarty= new smarty();
+//
 //        $smarty->display("admin.html");
 //    }
 //}

@@ -47,13 +47,16 @@ define("CACHE_PATH",APP_NAME."cache". DIRECTORY_SEPARATOR);
 define("COMPILE_PATH",APP_NAME."compile". DIRECTORY_SEPARATOR);
 include_once  LIBS_PATH  ."roule1.class.php";
 //include_once LIBS_PATH."engine.class.php";
-include_once SMARTY_PATH . "Smarty.class.php";
+include_once SMARTY_PATH . "smarty.class.php";
 //include_once LIBS_PATH  ."main.class.php";
-spl_autoload_register('auto');
 function auto ($className){
-    echo LIBS_PATH  .$className;
-    include_once  LIBS_PATH  .$className.".class.php";
+
+    include_once MAIN_PATH.$className.".class.php";
 }
+spl_autoload_register('auto');
+
+
+//echo LIBS_PATH.$className.".class.php";
 $rou = new \libs\roule1();
 $rou->run();
 
